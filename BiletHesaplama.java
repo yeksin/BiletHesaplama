@@ -28,6 +28,6 @@ public class BiletHesaplama {
         } else if (age >=65) {
             System.out.println("Ödemeniz gereken tutar: "+normalTutar*0.7 + " TL" );
         } else {
-        System.out.println("Ödemeniz gereken normal tutar: " +normalTutar +" TL");
+        System.out.println("Ödemeniz gereken tutar: " +normalTutar +" TL");
     }}
 }
