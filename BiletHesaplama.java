@@ -6,13 +6,13 @@ public class BiletHesaplama {
         int km,age,ttyp;
         Scanner scan =new Scanner(System.in);
 
-        System.out.print("Lütfen yol uzunluðunu km üzerinden giriniz: ");
+        System.out.print("LÃ¼tfen yol uzunluÄŸunu km Ã¼zerinden giriniz: ");
         km= scan.nextInt();
 
-        System.out.print("lütfen yaþýnýzý giriniz: ");
+        System.out.print("lÃ¼tfen yaÅŸÄ±nÄ±zÄ± giriniz: ");
         age= scan.nextInt();
 
-        System.out.print("1-Tek Yön \n2-Gidiþ Dönüþ \nLütfen yolculuk tipini seçiniz: ");
+        System.out.print("1-Tek YÃ¶n \n2-GidiÃ¾ DÃ¶nÃ¼Ã¾ \nLÃ¼tfen yolculuk tipini seÃ§iniz: ");
         ttyp= scan.nextInt();
 
         double normalTutar= 0.1*km;
@@ -20,14 +20,14 @@ public class BiletHesaplama {
         if (ttyp==2) {
             normalTutar=normalTutar*0.8*2;
         }if (age <1 || ttyp>2 || ttyp<1 || km<1) {
-            System.out.println("Hatalý veri girdiniz!");
+            System.out.println("HatalÄ± veri girdiniz!");
         } else if (age <12) {
-            System.out.println("Ödemeniz gereken tutar: " +normalTutar*0.5+ " TL");
+            System.out.println("Ã–demeniz gereken tutar: " +normalTutar*0.5+ " TL");
         } else if (age >=12 && age <24) {
-            System.out.println("Ödemenzi gereken tutar: "+normalTutar*0.9+ " TL");
+            System.out.println("Ã–demeniz gereken tutar: "+normalTutar*0.9+ " TL");
         } else if (age >=65) {
-            System.out.println("Ödemeniz gereken tutar: "+normalTutar*0.7 + " TL" );
+            System.out.println("Ã–demeniz gereken tutar: "+normalTutar*0.7 + " TL" );
         } else {
-        System.out.println("Ödemeniz gereken normal tutar: " +normalTutar +" TL");
+        System.out.println("Ã–demeniz gereken normal tutar: " +normalTutar +" TL");
     }}
 }
